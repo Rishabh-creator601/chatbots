@@ -1,0 +1,67 @@
+version: "3.0"
+
+
+actions:
+ - action_test
+ - action_time_now
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_profile
+  - bot_age
+  - myres
+  - time_now
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi"
+  - text: "Hello"
+  - text: "what can i do for you ?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "You surely do something great"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "keep it on"
+  - text: "You Leveled up , Great"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "good bye "
+
+  utter_iamabot:
+  - text: "I am an Intelligent AI chatbot  ,still i need some knowledge to gain ."
+  - text: "I am just an chatbot "
+
+  utter_botans:
+  - text: "My name is Iris"
+  - text: "i am a chatbot "
+  
+
+  utter_botborn:
+  - text: "My age is not defined , i reborn everyday and i am born in windows 7"
+  - text: "I am not pretty much sure , its almost some months"
+
+  utter_myans:
+  - text: "giving My response !"
+
+  utter_timenow:
+  - text: "Getting Current Time is ....."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

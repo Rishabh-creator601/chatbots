@@ -1,0 +1,32 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: Tell Time 
+  steps:
+  - intent: time_now
+  - action: action_time_now
+- rule: Say 'hello' when user asks 
+  steps:
+  - intent: myres
+  - action: action_test
+
+- rule: tell age when user asks
+  steps:
+  - intent: bot_age
+  - action: utter_botborn
+
+- rule: tell name when user asks 
+  steps:
+  - intent: bot_profile
+  - action: utter_botans
+
